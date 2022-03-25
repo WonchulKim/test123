@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+사용자 목록
+<table border="1" width="100%">
+  <tr th:each="u : ${user}"> 
+    <td th:text="${u.sn}"></td>
+    <td th:text="${u.unm}"></td>
+    <td th:text="${u.uid}"></td>
+    <td th:text="${u.upw}"></td>
+    <td th:text="${u.set_dt}"></td>
+    <td th:text="${u.put_dt}"></td>
+    <td th:text="${u.del_yn}"></td>
+  </tr>
+</table>
+
+</body>
+</html>
