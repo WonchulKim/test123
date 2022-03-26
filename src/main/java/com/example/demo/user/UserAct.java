@@ -21,7 +21,7 @@ public class UserAct {
     mav.setViewName("user");
     List<Map<String, String>> l = userDao.allMember();
     System.out.println(l);
-		
+	System.out.println("source_change");
     mav.addObject("user", l);
     return mav;
   }
